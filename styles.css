@@ -16,27 +16,27 @@ body {
     background-color: black;
 }
 h1 {
-    font-size: 180%;
+    font-size: 150%;
     margin: auto;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     text-align: center;
-    color: #43495D;
-    padding-top: 5.5em;
-    text-shadow: 1px 1px 2px #D1D7E0;
+    color: #D1D7E0;
+    padding-top: 7em;
+    text-shadow: 1px 1px 2px #564F6F;
     width: 80%;
 }
 h2 {
-    font-family: 'Teko', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     text-align: center;   
     margin: auto;
-    color: #43495D;
+    color: #D1D7E0;
     font-size: 120%;
-    text-shadow: 1px 1px 2px #D1D7E0;
+    text-shadow: 1px 1px 2px #564F6F;
     width: 80%;
 }
 h3 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 100%;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 110%;
 }
 p {
     font-family: 'IM Fell English SC', serif;
@@ -77,8 +77,11 @@ ul {
 }
 .selection {
     background: linear-gradient( #D1D7E0, #2D283E);
-    border: 3px solid #43495D;
+    border-width: 2px 4px 2px 4px;
+    border-style: solid;
+    border-color:  #43495D;
     padding: 1em;
+
 }
 #cosmos {
     font-family: 'Libre Barcode 128 Text', 'cursive';
@@ -108,7 +111,7 @@ ul {
         padding-top: 4em;
     }
     li {
-        margin: 2em auto;
+        margin: 1em auto;
     }
     .thumbnail, #cosmos {
         margin-right: 0;
