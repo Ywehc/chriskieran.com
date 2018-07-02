@@ -27,10 +27,10 @@ h1 {
 }
 h2 {
     font-family: 'Didact Gothic', sans-serif;
-    text-align: center;   
-    margin: auto;
+    text-align: left;   
+    margin-left: 15%;
     color: #D1D7E0;
-    font-size: 120%;
+    font-size: 110%;
     text-shadow: 1px 1px 2px #564F6F;
     width: 80%;
 }
@@ -72,14 +72,14 @@ ul {
     list-style-type: none; 
     width: 100%;
     padding: 0;
-    max-width: 576px;
+    max-width: 500px;
 
 }
 .selection {
     background: linear-gradient( #D1D7E0, #2D283E);
     border-width: 2px 4px 2px 4px;
     border-style: solid;
-    border-color:  #43495D;
+    border-color:  #2D283E;
     padding: 1em;
 
 }
@@ -106,9 +106,13 @@ ul {
 @media (min-width: 576px) {
     header {
         height: 16em;
+        margin-bottom: 1em;
     }
     h1 {
         padding-top: 4em;
+    }
+    h3 {
+        font-size: 150%;
     }
     li {
         margin: 1em auto;
@@ -127,10 +131,20 @@ ul {
         padding-top: 1em;
     }   
 }
-
+@media (min-width: 1200px) {
+    h2 { 
+    margin-left: 25%;
+    }   
+}
 @media (min-width: 1300px) {
     h1 {
         padding-top: 2.5em;
     }
 }
+@media (min-width: 1650px) {
+    h2 { 
+    margin-left: 30%;
+    }   
+}
+
 
