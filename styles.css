@@ -1,150 +1,376 @@
-/* colour palette used:
+/* Chris Kieran 2018 */
 
-grape - #802BB1
-dark violet - #2D283E
-grey - #43495D
-violet-grey - #564F6F
-light grey - #D1D7E0;
-*/
+/*Site Wide Styles*/
 
-/* global styles */
-html, body {
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
 }
 body {
-    background-color: black;
+    height: 100%;
 }
-h1 {
-    font-size: 150%;
+.btn {
+    color: white!important;
+    border-color: white!important;
+    border-radius: 0%;
+}
+.wrapper {
+    max-width: 1200px;
     margin: auto;
-    font-family: 'Didact Gothic', sans-serif;
+    background-color: white;
     text-align: center;
-    color: #D1D7E0;
-    padding-top: 7em;
-    text-shadow: 1px 1px 2px #564F6F;
-    width: 80%;
 }
-h2 {
-    font-family: 'Didact Gothic', sans-serif;
-    text-align: left;   
-    margin-left: 15%;
-    color: #D1D7E0;
-    font-size: 110%;
-    text-shadow: 1px 1px 2px #564F6F;
-    width: 80%;
-}
-h3 {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 110%;
-}
-p {
-    font-family: 'IM Fell English SC', serif;
-    color: #802BB1;
-}
-/* header styles */
-
-header {
-    width: 100%;
-    height: 24em;
+.subpage-heading {
+    font-family: 'Raleway', 'sans-serif'; 
+    color: #0d1c3d; 
     text-align: center;
-    background-image: url("https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a17706f58bd8f2893b75c64da56a5d21&auto=format&fit=crop&w=800&q=80");
-    background-size: cover;
-    background-position-y: 50%;
-    padding-top: 1em;
+    font-size: 200%;
+    margin-bottom: .5em;
 }
+.subpage-subheading {
+    font-family: 'Raleway', 'sans-serif'; 
+    color: #0d1c3d; 
+    text-align: center;
+}
+/* Nav Styles */
 
-/* main styles */
-
-.main-container {
+.navbar-inner {
+    background-color: transparent;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;  
 }
-li {
-    height: 50px;
-    width: 90%;
-    color: #2D283E; 
-    padding: .3em;   
-}
-ul {
-    list-style-type: none; 
-    width: 100%;
-    padding: 0;
-    max-width: 500px;
-
-}
-.selection {
-    background: linear-gradient( #D1D7E0, #2D283E);
-    border-width: 2px 4px 2px 4px;
-    border-style: solid;
-    border-color:  #2D283E;
-    padding: 1em;
-
-}
-#cosmos {
+.navbar-brand {
     font-family: 'Libre Barcode 128 Text', 'cursive';
-    font-size: 160%;
-    color: #802BB1;
-    float:right;
-    margin-top: 15px;
-    
+    font-size: 2em;
+    text-transform: lowercase;
 }
-#chewy-standing {
+.navbar-toggler {
+    float: right;
+    margin-top: 2%;
+}
+
+/* Footer Styles */
+.footer {
+    flex-shrink: 0;
+    /* Set the fixed height of the footer here */
+    height: 2em;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: transparent;
+}
+.footer-links {
+    list-style-type: none; 
+    text-align: center;
+}
+.footer-links li {
+    display: inline-block;
+    margin: 3%;
+    color: white;
+    font-family: 'Raleway', 'sans-serif';     
+}
+#homebtn:hover, #aboutbtn:hover, #portfoliobtn:hover, #hiremebtn:hover {
+    background-color: white;
+    color: #0d1c3d!important;
+}
+/* Index Styles */    
+.index-toggler {
+    background-color: #0d1c3d;
+    border-color: white!important;
+}
+.index-content{
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground-mobile.jpg");
+    background-repeat: no-repeat;
+    height: 35em;
+    background-size: cover;  
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 1 0 auto;  
+}    
+.index-heading {
+    color: white;
+    /* font-family: 'Play', sans-serif; */
+    /* font-family: 'Righteous', cursive; */
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    margin: .5em;
+}
+.index-subheading {
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    font-size: 120%;
+}
+
+.index-jargon{
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    /* color: #0d1c3d;  */
+    width: 80%;
     margin: auto;
+    text-align: center;    
+    font-weight: lighter;
+    font-size: 130%;
 }
-.thumbnail {
-    height: 3.5em;
-    width: auto;   
-    float: right; 
-}
-.redirect {
+
+.services ul{
+    font-family: 'Libre Barcode 128 Text', 'cursive';
+    display: flex;
     flex-direction: row;
+    text-align: center;
+    margin: 8em auto;
+    width: 80%;
+}
+.services li {
+    margin: auto;
+    font-size: 250%;
+    list-style-type: none;
+    color: #0d1c3d;
+}
+
+.fade-in-3s {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+}
+.fade-in-7s {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 8s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* About Styles */
+.about-content{
+    background-color: white;
+    color: #0d1c3d;  
+    font-family: 'Raleway', 'sans-serif';
+    padding: 2em;
+    min-height: 400px;
+}
+#about-btn-home:hover, #about-btn-about:hover, #about-btn-portfolio:hover, #about-btn-hireme:hover {
+    background-color: white;
+    color:black!important;
+}
+.about-toggler {
+    border-color: white!important;
+}
+
+.skills ul {
+    margin: auto;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.skills li {
+    background: rgb(250, 243, 253);
+    border-radius: 2%;
+    padding: .5em;
+}
+.skills li:nth-child(odd) { 
+    background: #d1dcf5; }
+
+.about-footer {
+    margin-top: 15%;
+}
+/* portfolio content */
+.portfolio-content{   
+    color: white;  
+    font-family: 'Raleway', 'sans-serif'; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.portfolio-toggler {
+    background-color: #0d1c3d;
+    border-color: black!important;
+}
+.portfolio-navbar-inner {
+    background-color: white;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+.apps {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.portfolio-container {
+    width: 350px;
+    border: 2px solid green;
+}
+.portfolio-desc{
+    float: left;
+    border: 1px solid yellow;
+    height: 5em;
+    width: 50%;
+    padding: 1em;
+}
+.portfolio-tech {
+    float: right;
+    border: 1px solid yellow;
+    height: 5em;
+    width: 50%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+.portfolio-link {
+    color: #0d1c3d;
+    font-weight: bold;
+}
+.portfolio-icon {
+    height: 30px;
+    width: auto;
+    margin: .2em;
+}
+/* Contact Styles */
+.contact-content{
+    background-color: white; 
+    font-family: 'Raleway', 'sans-serif'; 
+    padding: 3em;
+}
+.contact-content h1, h2{
+    font-size: 150%; 
+}
+.thumbnail-round {
+    border-radius: 50%;
+    border: 3px solid #0d1c3d;
+    width: 200px;
+    margin: 2em;
+}
+#button-submit {
+    background-color: #0d1c3d!important;
+}
+
+#button-submit:hover {
+    background-color: white!important;
+    color: #0d1c3d!important;
 }
 
 @media (min-width: 576px) {
-    header {
-        height: 16em;
-        margin-bottom: 1em;
+    /* Index 576px */
+    .index-heading {
+        margin: 1em;
+        font-weight: bold;
     }
-    h1 {
-        padding-top: 4em;
+    .index-subheading {
+        font-weight: bold;
+        color: #0d1c3d;
     }
-    h3 {
+    .index-jargon {
+        color: #0d1c3d;
+        font-size: 200%;
+        font-weight: 400;
+    }
+    .services ul {
+        margin: 0 auto;
+    }
+    /* About 576px */
+    .about-content {
+        font-size: 120%;
+    }
+    .about-me {
+        font-size: 110%;
+    }
+    /* Portfolio 576px */
+    /* Contact 576 */
+}
+
+@media (min-width: 768px) {
+    /* Index 768px */
+    .index-content{
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground-768.jpg");
+    }
+    .index-heading {
+        color: #0d1c3d;
+        margin-top: 2em;
+    } 
+    /*portfolio 768px */
+    .portfolio-thumb {
+    height: 200px;
+    }
+    /* Contact 768 */
+}
+
+@media (min-width: 992px) { 
+    /* Index 992px */
+
+    /* About 992px */
+
+    .about-me {
+        margin: 20% auto;
+    }
+    .about-footer {
+    margin-top: 0%;
+    }
+    /* Portfolio 992px */
+    .portfolio-container {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    }
+    .portfolio-subheading {
+        font-size: 24px;
+    }
+    .portfolio-thumb {
+        width: 15em;
+    }
+    /* Contact 992px */
+    .contact-email-link {
+        color: #0d1c3d;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Index 1200px */
+    .index-content{
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground.jpg");
+    }
+    .index-heading {
+        font-size: 300%;
+        margin: 1.2em auto;
+    }
+    .index-subheading {
         font-size: 150%;
     }
-    li {
-        margin: 1em auto;
+    .index-jargon {
+        margin-top: 5em;
     }
-    .thumbnail, #cosmos {
-        margin-right: 0;
+    .services ul {
+        margin: 2em auto;
     }
-}
-
-@media (min-width: 800px) {
-    header {
-    background-position-y: 70%;
-    height: 10em;
+    /* Portfolio 1200px */
+    .portfolio-container {
+    width: 70%;
     }
-    h1 {
-        padding-top: 1em;
-    }   
-}
-@media (min-width: 1200px) {
-    h2 { 
-    margin-left: 25%;
-    }   
-}
-@media (min-width: 1300px) {
-    h1 {
-        padding-top: 2.5em;
+    .portfolio-content{
+    background-position-y: 75%;
     }
+    /* Contact 1200px */
 }
-@media (min-width: 1650px) {
-    h2 { 
-    margin-left: 30%;
-    }   
-}
-
 

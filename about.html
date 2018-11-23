@@ -3,9 +3,7 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="google" content="notranslate">
-    <meta http-equiv="Content-Language" content="en">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
@@ -15,16 +13,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 
-    <title>Chris Kieran - Web Developer</title>
+    <title>About Me</title>
 </head>
 <nav class="navbar navbar-default navbar-expand-md navbar-dark">
     <div class="navbar-inner">
         <a class="navbar-brand" href="index.html">chris kieran web</a>
-        <button class="navbar-toggler index-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <button class="navbar-toggler about-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,47 +28,64 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
-                    <button type="button" class="btn btn-outline-primary btn-sm" id="homebtn">
-                        Home</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" id="about-btn-home">Home</button>
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="about.html">
-                    <button type="button" class="btn btn-outline-primary btn-sm" id="aboutbtn">About</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" id="about-btn-about">About</button>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">
-                    <button type="button" class="btn btn-outline-primary btn-sm" id="portfoliobtn">Portfolio</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" id="about-btn-portfolio">Portfolio</button>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">
-                    <button type="button" class="btn btn-outline-primary btn-sm" id="portfoliobtn">Hire Me</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" id="about-btn-hireme">Hire Me</button>
                 </a>
             </li>
         </ul>
     </div>
 </nav>
 <body style="background-color: #041738">
-    <section class="index-content">
-            <h1 class="index-heading">Chris Kieran</h1>
-            <h2 class="index-subheading">Web Developer</h2>
-            <h3 class="index-jargon fade-in-3s">Creative, Dynamic, Responsive Web Applications & Solutions</h3>
-            <div class="services">
-                <ul class="fade-in-7s">
-                    <li>sites</li>
-                    <li>stores</li>
-                    <li>apps</li>
-                </ul>
-            </div>            
-    </section>
-    <footer class="footer">   
+    <div class="wrapper about-content">
+        <header>
+            <h1 class="subpage-heading">My skills</h1>
+        </header>
+        <div class="skills">
+            <ul>
+                <li>Modern, accessible HTML, CSS and JavaScript</li>
+                <li>Some PHP, node.js, mySQL, mongoDB, Git</li>
+                <li>Exposure to react.js, Bootstrap, jQuery, Sass libraries</li>
+                <li>REST API fundamentals</li>
+                <li>At ease with responsive and mobile-first designs</li>
+                <li>CMS e-commerce such as WordPress/WooCommerce and Shopify</li>
+                <li>Hosting and Web Administration (including some AWS)</li>
+                <li>Photoshop</li>
+                <li>Salesforce Administration</li>
+            </ul>
+        </div>
+        <div style="margin-top: 2em">
+            <h2 style="text-align: center">A little about me</h2>
+            <p style="text-align: center; margin-top: 1em">Originally from Toronto, I now reside in nearby London, Ontario with my amazing wife and 
+                adorable dog. Learning new technologies is my passion, but I love to get outside and experience nature as often as I can. 
+                I'm a music fanatic and love discovering new tunes every day. My other interests include animals, astronomy, hockey and travel.</p>
+        </div>                      
+    </div>
+    <footer class="footer about-footer">   
             <ul class="footer-links">
-                <a href="about.html"><li>About</li></a>
-                <a href="portfolio.html"><li>Portfolio</li></a>
-                <a href="contact.html"><li>Hire Me</li></a>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="portfolio.html">
+                    <li>Portfolio</li>
+                </a>
+                <a href="contact.html">
+                    <li>Hire Me</li>
+                </a>
             </ul>
     </footer>
 
