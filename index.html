@@ -2,7 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129656998-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129656998-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="google" content="notranslate">
     <meta http-equiv="Content-Language" content="en">
@@ -62,11 +71,14 @@
             <h2 class="index-subheading">Web Developer</h2>
             <h3 class="index-jargon fade-in-3s">Creative, Dynamic, Responsive Web Applications & Solutions</h3>
             <div class="services">
-                <ul class="fade-in-7s">
-                    <li>sites</li>
-                    <li>stores</li>
-                    <li>apps</li>
-                </ul>
+                <a href="portfolio.html">
+                    <ul>
+                        <li class="fade-in-services">sites</li>
+                        <li class="fade-in-services">stores</li>
+                        <li class="fade-in-services">apps</li>
+                    </ul>
+                </a>
+
             </div>            
     </section>
     <footer class="footer">   
@@ -75,6 +87,10 @@
                 <a href="portfolio.html"><li>Portfolio</li></a>
                 <a href="contact.html"><li>Hire Me</li></a>
             </ul>
+            <p class="footer-email">
+                <a href="mailto:chriskierandevelopment@gmail.com" class="contact-email-link">chriskierandevelopment@gmail.com</a>
+            </p>
+            <p class="footer-email">© 2018 Chris Kieran</p>
     </footer>
 
     <!-- Optional JavaScript -->

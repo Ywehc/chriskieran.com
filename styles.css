@@ -76,6 +76,13 @@ body {
     background-color: white;
     color: #0d1c3d!important;
 }
+.footer-email {
+    text-align: center;
+    color: white;
+}
+.footer-email a {
+    color: white;
+}
 /* Index Styles */    
 .index-toggler {
     background-color: #0d1c3d;
@@ -135,6 +142,9 @@ body {
     list-style-type: none;
     color: #0d1c3d;
 }
+.services a:hover {
+    text-decoration: none;
+}
 
 .fade-in-3s {
 	opacity: 1;
@@ -143,12 +153,12 @@ body {
 	animation-timing-function: ease-in;
 	animation-duration: 3s;
 }
-.fade-in-7s {
+.fade-in-services {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 8s;
+    animation-duration: 8s;
 }
 
 @keyframes fadeInOpacity {
@@ -218,30 +228,35 @@ body {
     display: flex;
     margin: auto;
     flex-direction: column;
+    padding: 1em;
 }
 .portfolio-container {
     width: 350px;
-    border: 2px solid green;
+}
+.portfolio-heading {
+    margin: .5em;
+}
+.app-subheading {
+    margin-top: .5em;
 }
 .portfolio-desc{
     float: left;
-    border: 1px solid yellow;
     height: 5em;
     width: 50%;
     padding: 1em;
 }
 .portfolio-tech {
     float: right;
-    border: 1px solid yellow;
     height: 5em;
     width: 50%;
     padding: 1em;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .portfolio-link {
     color: #0d1c3d;
-    font-weight: bold;
+    font-size: 120%;
 }
 .portfolio-icon {
     height: 30px;
@@ -298,6 +313,9 @@ body {
         font-size: 110%;
     }
     /* Portfolio 576px */
+    .portfolio-container {
+        width: 500px;
+    }
     /* Contact 576 */
 }
 
@@ -311,9 +329,7 @@ body {
         margin-top: 2em;
     } 
     /*portfolio 768px */
-    .portfolio-thumb {
-    height: 200px;
-    }
+
     /* Contact 768 */
 }
 
@@ -329,21 +345,7 @@ body {
     margin-top: 0%;
     }
     /* Portfolio 992px */
-    .portfolio-container {
-    width: 90%;
-    height: 80%;
-    margin: auto;
-    }
-    .portfolio-subheading {
-        font-size: 24px;
-    }
-    .portfolio-thumb {
-        width: 15em;
-    }
     /* Contact 992px */
-    .contact-email-link {
-        color: #0d1c3d;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -365,12 +367,6 @@ body {
         margin: 2em auto;
     }
     /* Portfolio 1200px */
-    .portfolio-container {
-    width: 70%;
-    }
-    .portfolio-content{
-    background-position-y: 75%;
-    }
     /* Contact 1200px */
 }
 
