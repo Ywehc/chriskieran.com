@@ -66,11 +66,30 @@
 <body style="background-color: #041738">
     <main class="contact-content">
         <div class="wrapper">
-            <h1>I am currently accepting freelance work and am interested in hearing about your projects!</h1>
             <img class="thumbnail-round" src="https://s3.amazonaws.com/chriskieran.com/assets/images/tablet-presentation.jpg">
-            <h2>For a quote and free consultation, please 
-                <a href="mailto:chriskierandevelopment@gmail.com" class="contact-email-link">email me</a>.
-            </h2> 
+            <h1 class="contact-large">I am interested in hearing about your projects!</h1>
+            <h2 class="contact-small">Please contact me for a free consultation and quote.</h2>
+            <form class="contact-form"action="https://formspree.io/chriskierandevelopment@gmail.com" method="POST">
+                <div>
+                    <label for="name"></label>
+                    <input class="form-input" type="text" name="name" id="name" placeholder="Name" required>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input class="form-input"  type="email" name="email" id="email" placeholder="Email"required>
+                </div>
+                <div>
+                    <label for="phone"></label>
+                    <input class="form-input"  type="tel" name="phone" id="phone" placeholder="Phone">
+                </div>
+                <div>
+                    <label for="message"></label>
+                    <input class="form-input"  type="text" name="message" id="message" placeholder="How can I help you?" style="height: 10em" required>
+                </div>
+                <div>
+                    <input class="btn btn-primary btn-sm contact-submit" type="submit" value="Send">
+                </div>
+            </form>
         </div>
     </main>
     <footer class="footer">   
