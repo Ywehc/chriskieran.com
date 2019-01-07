@@ -1,0 +1,266 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+figcaption {
+    padding: .5em;
+}
+footer {
+    border-top: 30px solid #21c2f8;
+    background: #f3f7f8;
+    text-align: center;
+    padding: 1em;
+}
+footer button {
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid #21c2f8;
+    border-radius: 5%;
+    padding: .3em;
+    background: #f3f7f8;
+}
+footer button:hover{
+    background: #21c2f8;
+    border: 1px solid #2c3e50;
+    color:  #f3f7f8;
+}
+.nav-top {
+    background:#f3f7f8;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    font-size: 105%;
+}
+.nav-top p{
+    margin: 0;
+}
+.nav-top p:hover, .nav-top a:hover{
+    color: #21c2f8;
+}
+.nav-left, .nav-right {
+    width: 50%;
+    padding: .5em;
+}
+.nav-right {
+    text-align: right;
+}
+.subnav {
+    width: 100%;
+    background: #21c2f8;
+    text-align: right;
+}
+.nav-socials {
+    padding: .2em;
+}
+.nav-socials a {
+    color: #2c3e50;
+}
+.nav-socials a:hover {
+    color: #f3f7f8;
+}
+.wrapper {
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground-mobile.jpg");
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.wrapper a {
+    text-decoration: none;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+}
+.hello {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 30px solid #21c2f8;
+    min-height: 423px;
+}
+.paragraph-light {
+    color: #f3f7f8;
+}
+.paragraph-dark {
+    color: #2c3e50;
+}
+.paragraph-interests {
+    color: #f3f7f8;
+}
+.owl-carousel figure {
+    display: none;
+}
+.mobile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.grid-item {
+    width: 60%;
+    margin: 1em auto;
+    background: #f3f7f8;
+    text-align: center;   
+}
+.grid-item img {
+    width: 100%;
+    border-bottom: 5px solid #21c2f8;
+}
+
+.links {
+    background-color: #f3f7f8;
+    margin: 0 auto;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+    color: #2c3e50;
+    border-bottom: 30px solid #21c2f8;
+}
+.links li {
+    height: 1.2em;
+    padding: 1em;
+    font-size: 110%;
+    font-weight: bold;
+}
+.links a {
+    color: #2c3e50;
+}
+.links a:hover {
+    color: #21c2f8;
+}
+.border-underline {
+    border-bottom: 2px solid #21c2f8;
+}
+.fab {
+    font-size: 150%;
+}
+.sitemap ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    border-top: 2px solid #2c3e50;
+    margin-top: 0;
+}
+.sitemap li {
+    margin: auto;  
+    padding: .2em; 
+    text-align: center;
+}
+.sitemap p {
+    margin-bottom: 0;
+}
+.sitemap a {
+    color: #202020;
+}
+.sitemap-lines {
+    display: flex;
+}
+.sitemap-border li {
+    border-left: 1px solid #2c3e50;
+    border-right: 1px solid #2c3e50;
+}
+#headshot-img {
+    border-radius: 50%;
+    width: 180px;
+}
+#sitemap-left {
+    border-right: 1px solid #2c3e50;
+}
+#sitemap-right {
+    border-left: 1px solid #2c3e50;
+}
+#sitemap-left, #sitemap-right {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    width: 50%;
+}
+
+
+@media (min-width: 768px) { 
+    figure {
+        border-radius: 10%;
+    }
+    figcaption {
+        background: #f3f7f8;
+        min-height: 50px;
+        padding: 1em;
+        color: #2c3e50;
+        border-top: 5px solid #21c2f8;
+    }
+    .wrapper {
+        background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground-768.jpg");
+    }
+    .top {
+        flex-direction: row;
+    }
+    .hello {
+        margin: 0;
+        min-height: 0;
+        border-bottom: none;
+    }
+    .hello p {
+        color: #f3f7f8;
+        text-shadow: 2px 2px 2px #2c3e50 ;
+    }
+    .links-container {
+        padding: 4em 2em;
+    }
+    .links {
+        border-bottom: none;
+        font-size: 100%;
+        border: 2px solid #21c2f8;
+    }
+    .links li {
+        height: auto;
+        padding: .6em;
+        min-width: 220px;
+    }
+    .paragraph-interests {
+        color: #2c3e50;
+        font-weight: bold;
+    }
+    .mobile-grid, .more-of-me {
+        display: none;
+    }
+    .owl-carousel figure{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #headshot-img {
+        margin: 2em;
+    }
+    #team-canada {
+        font-size: 25%;
+    }
+}
+@media (min-width: 850px) {
+    .paragraph-interests {
+        width: 90%;
+        margin: auto;
+        font-size: 110%;
+        font-weight: lighter;
+    }
+    .paragraph-light {
+        font-size: 140%;
+    }
+}
+@media (min-width: 992px) {
+    .wrapper {
+        background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground.jpg");
+    }
+    .slider {
+        width: 70%;
+        margin-left: 5%;
+    }
+    #headshot-img {
+        margin: .5em;
+    }
+}
+/*
+
+#202020 - black
+#2c3e50 - navy
+#21c2f8 - light blue
+#bdc3c7 - grey
+#f3f7f8 - light grey

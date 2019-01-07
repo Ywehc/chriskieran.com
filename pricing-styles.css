@@ -1,0 +1,100 @@
+.ui-pricing {
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/bg-forest-mixed.jpg");
+    border: 3px solid #efedef;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+main ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+main p {
+    width: 70%;
+    margin: auto;
+    padding: .5em;
+    margin: .5em auto;
+}
+main li {
+    list-style-type: none;
+    margin: .3em;
+    padding: .3em; 
+    background-color: #222022;
+    border-radius: 2%;
+}
+main p, main li {
+    background: #efedef;
+    color: #4c4947;
+    font-weight: bold;
+    border: 2px solid #222022;
+}
+h1, h2 {
+    color: #efedef;
+    text-shadow: 1.5px 1.5px 3px #222022 ;
+}
+button {
+    color: #efedef;
+    background: transparent;
+    font-family: 'Questrial', sans-serif;
+    width: 7em;
+    border: 3px solid #6ead3a;
+    border-radius: 5%;
+    margin: .5em;
+    font-size: 90%;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 10px 13px -7px #222022, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #222022, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+button:hover{
+    background: #6ead3a;
+    border: 3px solid #6ead3a;
+    color: #4c4947;
+}
+.pricing-free h2 {
+    text-decoration: underline #6ead3a;
+}
+.pricing-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media (min-width: 972px) { 
+    main {
+        flex-direction: row;
+    }
+    main p, main li {
+        font-size: 120%;
+        width: 70%;
+    }
+    h1 {
+        text-align: left;
+        font-size: 300%;
+        margin-left: 4%;
+    }
+    h2 {
+        font-size: 180%;
+    }
+    .pricing-contact button {
+        font-size: 85%;
+        padding: .1em;
+    }
+    .pricing-free, .pricing-1, .pricing-2, .pricing-3 {
+        width: 23%;
+        margin: 0 auto;
+        background: transparent;
+        border-radius: 2%;
+    }
+    .pricing-free p {    
+        text-align: left;
+    }
+    .pricing-contact p {
+        font-size: 140%;
+    }
+}
+/*
+#222022 - charcoal
+#efedef - grey
+#6ead3a - green

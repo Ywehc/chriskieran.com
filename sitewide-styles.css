@@ -1,0 +1,147 @@
+html, body {
+    margin: 0;
+    background: #efedef;
+    height: 100%;
+}
+
+footer button {
+    font-family: 'Questrial', sans-serif;
+    border: 1px solid #6ead3a;
+    border-radius: 5%;
+    padding: .3em;
+    background: #f3f7f8;
+    color: #4c4947;
+}
+footer button:hover{
+    background: #6ead3a;
+    border: 1px solid #222022;
+    color:  #f3f7f8;
+    border-radius: 5%;
+}
+.wrapper {   
+    min-width: 350px;
+    padding: 10px;
+    display: flex;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin: auto;
+    background: #222022;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.wrapper a {
+    text-decoration: none;
+}
+.ui {
+    min-width: 300px;
+    border: 3px solid #6ead3a;
+    border-radius: 2%;
+    padding: 10px;
+    color: #efedef;
+    background-size: cover;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button-primary {
+    color: #ceccce;
+    border: 2px solid #efedef;
+    background: #6ead3a;
+    font-family: 'Questrial', sans-serif;
+    padding: .4em;
+    border-radius: 5%;
+    font-size: 100%;
+    margin: .5em;
+    color: #222022;
+    font-weight: bold;
+}
+.button-primary:hover{
+     background: #222022;
+     border: 2px solid #6ead3a;
+     color: #6ead3a;
+}
+.copyright {
+    color: #f3f7f8;
+}
+.nav-footer {
+    display: flex;
+    margin: 1em;
+}
+.nav-footer a {
+    text-decoration: none;
+    color: #efedef;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 20px;
+}
+.nav-footer ul {
+    display: flex; 
+    list-style-type: none;
+    padding: .1em;
+    margin: auto;
+}
+.nav-footer li {
+    margin: .3em;
+    border: 1px solid #efedef;
+}
+.sitemap ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    border-top: 2px solid #6ead3a;
+    margin-top: 0;
+}
+.sitemap li {
+    margin: auto;  
+    padding: .2em; 
+    text-align: center;
+}
+.sitemap p {
+    margin-bottom: 0;
+}
+.sitemap a {
+    color: #f3f7f8;
+}
+.sitemap-lines {
+    display: flex;
+}
+.sitemap-border li {
+    border-left: 1px solid #6ead3a;
+    border-right: 1px solid #6ead3a;
+}
+#sitemap-left {
+    border-right: 1px solid #6ead3a;
+}
+#sitemap-right {
+    border-left: 1px solid #6ead3a;
+}
+#sitemap-left, #sitemap-right {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    width: 50%;
+}
+
+@media (min-width: 768px) { 
+    nav {
+        margin: 20px;
+    }
+    nav li {
+        width: 100px;
+        height: 25px;
+        padding: .5em;
+    }
+}
+
+/* 
+#efedef - light grey
+#ceccce - grey
+#6ead3a - green 
+#4c4947 - charcoal
+#222022 - black
+
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Libre Barcode 128 Text', cursive;
+
+
+

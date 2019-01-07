@@ -1,0 +1,54 @@
+.ui-portfolio {
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/bg-forest-lake.jpg");
+    width: 80%;
+}
+.portfolio-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #222022;
+    margin: .5em auto;
+    border-radius: 2%;
+    border: 2px solid #6ead3a;
+    max-width: 600px;
+}
+.portfolio-container a {
+    color: #efedef;
+    text-decoration: none;
+}
+.portfolio-desc, .portfolio-tech {
+    width: 50%;
+}
+.portfolio-tech {
+    padding: .5em;
+}
+.portfolio-icon {
+    width: 30px;
+}
+.fab {
+    font-size: 33px;
+}
+
+@media (min-width: 768px) { 
+    h1 {
+        font-size: 250%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    nav {
+        margin: 20px;
+    }
+    nav li {
+        width: 100px;
+        height: 25px;
+        padding: .5em;
+    }
+}
+
+/* 
+#222022 - charcoal
+#efedef - grey
+#6ead3a - green
+/*
+
+
