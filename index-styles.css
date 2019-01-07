@@ -1,9 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #f3f7f8;
 }
 figcaption {
+    background: #f3f7f8;
     padding: .5em;
+    color: #2c3e50;
+    border-top: 5px solid #21c2f8;
 }
 footer {
     border-top: 30px solid #21c2f8;
@@ -70,12 +74,17 @@ footer button:hover{
     display: flex;
     flex-direction: column;
 }
+.top > .hello {
+    order: 1;
+}
+.top > .links-container {
+    order: 2;
+}
 .hello {
     margin: 0 auto;
     text-align: center;
     padding: 1em;
     border-bottom: 30px solid #21c2f8;
-    min-height: 423px;
 }
 .paragraph-light {
     color: #f3f7f8;
@@ -86,25 +95,10 @@ footer button:hover{
 .paragraph-interests {
     color: #f3f7f8;
 }
-.owl-carousel figure {
-    display: none;
-}
-.mobile-grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.grid-item {
-    width: 60%;
+.owl-item figure{
+    width: 90%;
     margin: 1em auto;
-    background: #f3f7f8;
-    text-align: center;   
 }
-.grid-item img {
-    width: 100%;
-    border-bottom: 5px solid #21c2f8;
-}
-
 .links {
     background-color: #f3f7f8;
     margin: 0 auto;
@@ -150,6 +144,9 @@ footer button:hover{
 .sitemap a {
     color: #202020;
 }
+.sitemap a:hover {
+    color: #21c2f8;
+}
 .sitemap-lines {
     display: flex;
 }
@@ -173,7 +170,7 @@ footer button:hover{
 }
 #headshot-img {
     border-radius: 50%;
-    width: 180px;
+    width: 140px;
 }
 #sitemap-left {
     border-right: 1px solid #2c3e50;
@@ -188,53 +185,50 @@ footer button:hover{
     height: 10px;
     width: 50%;
 }
-
-
 @media (min-width: 768px) { 
     figure {
         border-radius: 10%;
     }
-    figcaption {
-        background: #f3f7f8;
-        min-height: 50px;
-        padding: 1em;
-        color: #2c3e50;
-        border-top: 5px solid #21c2f8;
-    }
     .wrapper {
-        background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground-768.jpg");
+        background-image: url("./images/toronto2.jpg");
+        background-position-x: 70%;
     }
     .top {
         flex-direction: row;
     }
+    .top > .hello {
+    order: 2;
+    }
+    .top > .links-container {
+        order: 1;
+    }
+    .links-container, .hello {
+        width: 50%;
+    }
     .hello {
-        margin: 0;
-        min-height: 0;
+        margin: 2em;
         border-bottom: none;
+        background: #2c3e50;
+        border: 1px solid #21c2f8;
+        text-align: left;
     }
     .hello p {
-        color: #f3f7f8;
-        text-shadow: 2px 2px 2px #2c3e50 ;
+        color: #21c2f8;
     }
     .links-container {
-        padding: 4em 2em;
+        padding: 2em;
     }
     .links {
-        border-bottom: none;
-        font-size: 100%;
-        border: 2px solid #21c2f8;
+        font-size: 65%;
+        border: 1px solid #21c2f8;
+        width: 160px;
+        margin: 0;
+    }
+    .border-underline {
+        border-bottom: 1px solid #21c2f8;
     }
     .links li {
-        height: auto;
         padding: .6em;
-        min-width: 220px;
-    }
-    .paragraph-interests {
-        color: #2c3e50;
-        font-weight: bold;
-    }
-    .mobile-grid, .more-of-me {
-        display: none;
     }
     .owl-carousel figure{
         display: flex;
@@ -242,34 +236,26 @@ footer button:hover{
         text-align: center;
     }
     #headshot-img {
-        margin: 2em;
+        margin: .5em;
+        float: right;
     }
     #team-canada {
         font-size: 25%;
     }
 }
 @media (min-width: 850px) {
-    .paragraph-interests {
-        width: 90%;
-        margin: auto;
-        font-size: 110%;
-        font-weight: lighter;
+    .links-container {
+        width: 70%;
+    }  
+    .hello {
+        width: 30%;
+    }
+    .wrapper {
+        background-position-y: bottom;
     }
     .paragraph-light {
-        font-size: 140%;
-    }
-}
-@media (min-width: 992px) {
-    .wrapper {
-        background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground.jpg");
-    }
-    .slider {
-        width: 70%;
-        margin-left: 5%;
-    }
-    #headshot-img {
-        margin: .5em;
-    }
+        font-size: 120%;
+    } 
 }
 /*
 

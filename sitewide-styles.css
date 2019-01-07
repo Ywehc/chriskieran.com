@@ -37,6 +37,7 @@ footer button:hover{
     color: #efedef;
     background-size: cover;
     max-width: 1200px;
+    margin: auto;
 }
 
 .button-primary {
@@ -114,6 +115,9 @@ footer button:hover{
 .sitemap a {
     color: #f3f7f8;
 }
+.sitemap a:hover {
+    color: #6ead3a;
+}
 .sitemap-lines {
     display: flex;
 }
@@ -134,7 +138,10 @@ footer button:hover{
     height: 10px;
     width: 50%;
 }
-
+/* Privacy Styles */
+.nav-footer ul{
+    flex-direction: column;
+}
 @media (min-width: 768px) { 
     nav {
         margin: 20px;
@@ -150,6 +157,9 @@ footer button:hover{
         margin: 1em auto;
         width: 100%;
         border-radius: 2%;
+    }
+    .nav-footer ul{
+    flex-direction: row;
     }
 }
 
