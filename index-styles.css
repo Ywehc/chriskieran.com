@@ -190,7 +190,7 @@ footer button:hover{
         border-radius: 10%;
     }
     .wrapper {
-        background-image: url("./images/toronto2.jpg");
+        background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/toronto2.jpg");
         background-position-x: 70%;
     }
     .top {
