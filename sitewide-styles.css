@@ -56,8 +56,19 @@ footer button:hover{
      border: 2px solid #6ead3a;
      color: #6ead3a;
 }
-.copyright {
+.legal{
     color: #f3f7f8;
+    display: flex;
+    padding: .5em;
+}
+.legal a{
+    color: #f3f7f8;
+}
+.legal a:hover{
+    color: #6ead3a;
+}
+.legal p {
+    width: 50%;
 }
 .nav-footer {
     display: flex;
@@ -133,7 +144,16 @@ footer button:hover{
         height: 25px;
         padding: .5em;
     }
+    /* Privacy Styles */
+
+    .ui-privacy {
+        margin: 1em auto;
+        width: 100%;
+        border-radius: 2%;
+    }
 }
+
+
 
 /* 
 #efedef - light grey

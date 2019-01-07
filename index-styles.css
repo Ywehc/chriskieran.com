@@ -157,6 +157,20 @@ footer button:hover{
     border-left: 1px solid #2c3e50;
     border-right: 1px solid #2c3e50;
 }
+.legal{
+    color: #2c3e50;
+    display: flex;
+    padding: .5em;
+}
+.legal a{
+    color: #2c3e50;
+}
+.legal a:hover{
+    color: #21c2f8;
+}
+.legal p {
+    width: 50%;
+}
 #headshot-img {
     border-radius: 50%;
     width: 180px;
