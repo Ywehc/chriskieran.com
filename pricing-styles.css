@@ -77,6 +77,11 @@ button:hover{
     h2 {
         font-size: 180%;
     }
+    .ui-pricing {
+        margin: 1em auto;
+        width: 100%;
+        border-radius: 2%;
+    }
     .pricing-contact button {
         font-size: 85%;
         padding: .1em;

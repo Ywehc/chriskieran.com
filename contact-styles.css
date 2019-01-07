@@ -2,7 +2,6 @@ h1, h2 {
     color: #efedef;
     text-shadow: 1.5px 1.5px 3px #222022 ;
 }
-
 h2 {
     font-size: 100%;
     background-color: #6ead3a;
@@ -56,7 +55,9 @@ h2 {
         margin: .5em auto;
     }
     .ui-contact {
+        margin: auto;
         width: 100%;
+        border-radius: 2%;
     }
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-size: 130%;

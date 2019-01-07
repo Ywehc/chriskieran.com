@@ -19,7 +19,6 @@ footer button:hover{
     border-radius: 5%;
 }
 .wrapper {   
-    padding: 10px;
     display: flex;
     font-family: 'Questrial', sans-serif;
     text-align: center;
@@ -34,12 +33,10 @@ footer button:hover{
 }
 .ui {
     border: 3px solid #6ead3a;
-    border-radius: 2%;
     padding: 10px;
     color: #efedef;
     background-size: cover;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
 .button-primary {
